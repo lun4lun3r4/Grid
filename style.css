@@ -1,0 +1,245 @@
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #529125;
+  }
+  
+  a:hover {
+    color: #285616;
+  }
+  
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('paven.png');
+    background-size: cover;
+  }
+  
+  header {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #logotipo img {
+    width: 140px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 40px;
+    color: #70b231;
+    text-shadow: 0px 2px 4px #333333;
+    text-align: center;
+  }
+  
+  nav {
+    width: 100%;
+    background-color: #333333;
+    height: 40px;
+    box-shadow: 0px 0px 2px grey;
+  }
+  
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  nav ul li {
+    line-height: 40px;
+    padding: 0 10px;
+  }
+  
+  nav ul li:hover {
+    background-color: #70b231;
+    box-shadow: 0px 0px 4px grey inset;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    padding: 0 10px;
+  }
+  
+  #content {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+    width: 90%;
+    max-width: 1250px;
+    min-height: 1100px;
+    margin: 20px auto;
+  }
+  
+  #aside {
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    margin-top: 20px;
+  }
+  
+  .widget {
+    padding: 10px 0;
+    width: 180px;
+    margin: 0 auto;
+  }
+  
+  .widget:not(:last-child) {
+    border-bottom: 2px dashed #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .widget form {
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+  }
+  
+  .widget label {
+    text-align: center;
+  }
+  
+  .widget input[type="text"],
+  .widget input[type="password"] {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #aside h3 {
+    background-color: #dfdfdf;
+    padding: 1px;
+    text-align: center;
+  }
+  
+  input[type="submit"] {
+    background-color: #70b231;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  input[type="submit"]:hover {
+    box-shadow: 0px 0px 2px gray;
+  }
+  
+  #aside a {
+    display: block;
+    margin-top: 10px;
+    color: #529125;
+  }
+  
+  #aside a:hover {
+    color: #285616;
+  }
+  
+  #enlaces ul {
+    list-style: none;
+  }
+  
+  #sections {
+    display: grid;
+    gap: 30px;
+  }
+  
+  #sections section {
+    background-color: white;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    padding: 20px;
+    position: relative;
+  }
+  
+  #sections section p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  .stickers {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .stickerOne {
+    position: absolute;
+    top: -20px;
+  }
+  
+  .stickerTwo {
+    position: absolute;
+    right: 40px;
+    top: -20px;
+  }
+  
+  footer {
+    width: 100%;
+    text-align: center;
+    background-color: #333333;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0px 0px 2px gray;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    #content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 32px;
+    }
+  
+    nav ul li {
+      padding: 0 5px;
+    }
+  
+    #aside {
+      width: 100%;
+      margin: 0;
+      box-shadow: none;
+    }
+  
+    #sections {
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    #logotipo img {
+      width: 100px;
+    }
+  
+    nav ul li {
+      padding: 0 5px;
+    }
+  
+    #aside {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    #sections {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+  
